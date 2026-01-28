@@ -440,35 +440,84 @@ body {
     color: var(--color-secondary);
 }
 
-/* Page Header */
+/* Page Header - Estilo naranja con fondo */
 .page-header {
     background: linear-gradient(135deg, var(--color-primary) 0%, #D86825 100%);
     color: var(--color-white);
-    padding: 60px 0;
+    padding: 50px 0;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 .page-header h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
-/* Content Section */
+/* Page Header - Estilo limpio (texto naranja con línea) */
+.page-header-clean {
+    background: var(--color-white);
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+
+.page-header-clean h1 {
+    color: var(--color-primary);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+    min-width: 80%;
+}
+
+/* Content Section - Estilo limpio */
 .content-section {
     background: var(--color-white);
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     margin-bottom: 30px;
+    border: 1px solid #e8e8e8;
+}
+
+.content-section.clean {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 40px 50px;
 }
 
 .content-section h2 {
     color: var(--color-primary);
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 15px;
+    border-bottom: 2px solid #c45a1f;
+    font-weight: 600;
+}
+
+.content-section h2.section-title {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Estilo para contenido simple de página */
+.page-content-wrapper {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+
+.page-content-box {
+    background: var(--color-white);
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 35px 45px;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
 .content-section h3 {
