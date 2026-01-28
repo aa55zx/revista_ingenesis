@@ -39,35 +39,42 @@ body {
    ========================================== */
 .institutional-header {
     background-color: var(--color-white);
-    padding: 15px 0;
+    padding: 20px 0;
     box-shadow: var(--shadow-sm);
 }
 
 .logos-banner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1.5fr;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
 }
 
 .logos-left {
     display: flex;
     align-items: center;
     gap: 15px;
-    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 .logos-left img {
-    height: 60px;
+    height: 50px;
     width: auto;
+    object-fit: contain;
+    flex-shrink: 1;
+}
+
+/* Logo SECIHTI más grande */
+.logo-secihti {
+    height: 70px !important;
 }
 
 .logo-posgrado-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 auto;
 }
 
 .logo-posgrado-center img {
@@ -80,7 +87,6 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex: 1;
 }
 
 .logo-right img {
@@ -343,7 +349,7 @@ body {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, var(--color-secondary) 0%, #C52517 100%);
+    background: linear-gradient( #C85A1F 100%);
     color: var(--color-white);
     padding: 60px 0;
     text-align: center;
@@ -515,7 +521,7 @@ body {
    FOOTER INSTITUCIONAL
    ========================================== */
 .institutional-footer {
-    background: linear-gradient(135deg, var(--color-secondary) 0%, #C52517 100%);
+    background: linear-gradient( #C85A1F 100%);
     color: var(--color-white);
     padding: 40px 0 20px;
     margin-top: 60px;
@@ -566,8 +572,9 @@ body {
    ========================================== */
 @media (max-width: 768px) {
     .logos-banner {
-        flex-direction: column;
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
     }
 
     .logos-left,
@@ -580,7 +587,7 @@ body {
     .logos-left img,
     .logo-posgrado-center img,
     .logo-right img {
-        height: 50px;
+        height: 45px;
     }
 
     .nav-menu {
